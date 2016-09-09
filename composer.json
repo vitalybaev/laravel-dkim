@@ -1,0 +1,14 @@
+{
+    "name": "vitalybaev/laravel5-dkim",
+    "description": "Laravel 5 package for signing outgoing messages with DKIM.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaly Baev",
+            "email": "dj@vitalybaev.ru"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.2"
+    }
+}
