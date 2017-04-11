@@ -23,8 +23,6 @@ class DkimMailServiceProvider extends MailServiceProvider
                 $app['view'], $app['swift.mailer'], $app['events']
             );
 
-            $this->setMailerDependencies($mailer, $app);
-
             // If a "from" address is set, we will set it on the mailer so that all mail
             // messages sent by the applications will utilize the same "from" address
             // on each one, which makes the developer's life a lot more convenient.
