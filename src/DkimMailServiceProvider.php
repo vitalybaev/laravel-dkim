@@ -22,6 +22,8 @@ class DkimMailServiceProvider extends MailServiceProvider
             $mailer = new Mailer(
                 $app['view'], $app['swift.mailer'], $app['events']
             );
+
+            $mailer->setQueue(app('queue'));
             
             if (method_exists($this, 'setMailerDependencies')) {
                 $this->setMailerDependencies($mailer, $app);
