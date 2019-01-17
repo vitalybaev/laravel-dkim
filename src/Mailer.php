@@ -20,7 +20,7 @@ class Mailer extends \Illuminate\Mail\Mailer
         if (in_array(strtolower(config('mail.driver')), ['smtp', 'sendmail', 'log'])) {
             if (config('mail.dkim_private_key') && file_exists(config('mail.dkim_private_key'))) {
                 if (config('mail.dkim_selector') && config('mail.dkim_domain')) {
-                    $message->attachDkim(config('mail.dkim_selector'), config('mail.dkim_domain'), file_get_contents(config('mail.dkim_private_key')));
+                    $message->attachDkim(config('mail.dkim_selector'), config('mail.dkim_domain'), file_get_contents(config('mail.dkim_private_key')), config('mail.dkim_passphrase'));
                 }
             }
         }
