@@ -23,8 +23,6 @@ Vitalybaev\LaravelDkim\DkimMailServiceProvider::class,
 'dkim_algo' => env('MAIL_DKIM_ALGO'), // sign algorithm (defaults to rsa-sha256)
 ```
 
-> **NOTE!** This package signs all emails only when mail driver is `smtp` and all required settings exist.
-
 ## License
 
 > The MIT License
