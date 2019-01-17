@@ -21,6 +21,7 @@ Vitalybaev\LaravelDkim\DkimMailServiceProvider::class,
 'dkim_private_key' => env('MAIL_DKIM_PRIVATE_KEY'), // path to private key, required
 'dkim_identity' => env('MAIL_DKIM_IDENTITY'), // identity (optional)
 'dkim_algo' => env('MAIL_DKIM_ALGO'), // sign algorithm (defaults to rsa-sha256)
+'dkim_passphrase' => env('MAIL_DKIM_PASSPHRASE'), // private key passphrase (optional)
 ```
 
 > **NOTE!** This package signs all emails only when mail driver is `smtp` and all required settings exist.
