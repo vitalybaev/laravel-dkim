@@ -24,6 +24,9 @@ Vitalybaev\LaravelDkim\DkimMailServiceProvider::class,
 'dkim_passphrase' => env('MAIL_DKIM_PASSPHRASE'), // private key passphrase (optional)
 ```
 
+### Disabling DKIM
+To prevent the DKIM signature from being added to outgoing emails (eg., in development environments), simply leave the configuration fields empty.
+
 ## License
 
 > The MIT License
