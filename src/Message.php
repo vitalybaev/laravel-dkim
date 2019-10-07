@@ -3,6 +3,7 @@
 namespace Vitalybaev\LaravelDkim;
 
 use Swift_Signers_DKIMSigner;
+use Swift_SwiftException;
 
 class Message extends \Illuminate\Mail\Message
 {
@@ -13,6 +14,7 @@ class Message extends \Illuminate\Mail\Message
      * @param $passphrase
      *
      * @return $this
+     * @throws Swift_SwiftException
      */
     public function attachDkim($selector, $domain, $privateKey, $passphrase = '')
     {
