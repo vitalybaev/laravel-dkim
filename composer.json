@@ -1,6 +1,6 @@
 {
     "name": "vitalybaev/laravel5-dkim",
-    "description": "Laravel 5 package for signing outgoing messages with DKIM.",
+    "description": "Laravel package for signing outgoing messages with DKIM.",
     "license": "MIT",
     "authors": [
         {
@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "laravel/framework": "^5.2"
+        "php": "^7.1",
+        "laravel/framework": "^5.2|^6.0"
     },
     "autoload": {
         "psr-4": {
