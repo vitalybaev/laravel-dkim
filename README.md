@@ -1,19 +1,22 @@
-# Laravel 5 DKIM
-Package, that allows sign emails with DKIM.
+# Laravel DKIM
+Package, that allows to sign emails with a DKIM signature.
 
 ## Installation
 1. Install via Composer:
 ```
-composer require vitalybaev/laravel5-dkim
+composer require ricardoboss/laravel-dkim
 ```
-2. In `config/app.php` comment line with original service provider:
+
+2. In `config/app.php` comment the line with the original service provider:
 ```
 // Illuminate\Mail\MailServiceProvider::class,
 ```
-3. In `config/app.php` add following line to provider's section:
+
+3. In `config/app.php` add the following line to provider's section:
 ```
 Vitalybaev\LaravelDkim\DkimMailServiceProvider::class,
 ```
+
 4. Fill your settings in `config/mail.php`:
 ```
 'dkim_selector' => env('MAIL_DKIM_SELECTOR'), // selector, required
